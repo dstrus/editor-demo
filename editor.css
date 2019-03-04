@@ -11,18 +11,18 @@ main {
 
 #video {
   position: relative;
-  width: 854px;
-  height: 480px;
+  width: 700px;
+  height: 394px;
 }
 
 #instructions {
   font-family: Raleway, sans-serif;
   background-color: #ddd;
   position: absolute;
-  top: 480px;
+  top: 394px;
   left: 0;
-  width: 854px;
-  height: calc(100vh - 480px);
+  width: 700px;
+  height: calc(100vh - 394px);
   box-sizing: border-box;
   padding: 1rem;
   border-right: 2px solid #e3e3e3;
@@ -43,11 +43,11 @@ main {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 854px;
+  left: 700px;
   right: 0;
   font-size: 16px;
-  width: calc(100vw - 854px);
-  height: 480px;
+  width: calc(100vw - 700px);
+  height: 394px;
 }
 
 #cssEditor {
@@ -56,19 +56,19 @@ main {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 854px;
+  left: 700px;
   right: 0;
   font-size: 16px;
-  width: calc(100vw - 854px);
-  height: 480px;
+  width: calc(100vw - 700px);
+  height: 394px;
 }
 
 #preview {
   position: absolute;
-  top: 480px;
-  left: 854px;
-  width: calc(100vw - 854px);
-  height: calc(100vh - 480px);;
+  top: 394px;
+  left: 700px;
+  width: calc(100vw - 700px);
+  height: calc(100vh - 394px);;
 }
 
 iframe{
