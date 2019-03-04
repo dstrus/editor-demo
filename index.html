@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="editor.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div id="video">
+      <iframe src="https://player.vimeo.com/video/320816845" align="left" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe>
+      <!-- <iframe src="https://player.vimeo.com/video/320816845" width="854" height="480" align="left" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe> -->
+    </div>
+    <div id="instructions">
+      <h2>What is HTML? And what is hypertext?</h2>
+      <p>To kick things off, we'll explore what exactly HTML is, and where it came from.</p>
+      <p>If there were a CodePen for this lesson, I'd link to it from here.</p>
+    </div>
+    <pre id="htmlEditor"></pre>
+    <pre id="cssEditor"></pre>
+    <div id="preview"></div>
+    <div id="buttons">
+      <button id="htmlButton" class="active">HTML</button>
+      <button id="cssButton">CSS</button>
+    </div>
+  </main>
+
+  <script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/ace.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/ext-emmet.js"></script>
+  <script src="editor.js"></script>
+</body>
+</html>
