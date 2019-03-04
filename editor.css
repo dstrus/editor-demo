@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway:400,700');
+
 body {
   overflow: hidden;
   margin: 0;
@@ -14,6 +16,8 @@ main {
 }
 
 #instructions {
+  font-family: Raleway, sans-serif;
+  background-color: #ddd;
   position: absolute;
   top: 480px;
   left: 0;
@@ -23,6 +27,15 @@ main {
   padding: 1rem;
   border-right: 2px solid #e3e3e3;
   font-size: 18px;
+}
+
+#instructions h1,
+#instructions h2,
+#instructions h3,
+#instructions h4,
+#instructions h5,
+#instructions h6 {
+  font-family: Oswald, sans-serif;
 }
 
 #htmlEditor {
