@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="editor.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div id="video">
+      <iframe src="https://player.vimeo.com/video/320816845" align="left" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe>
+      <!-- <iframe src="https://player.vimeo.com/video/320816845" width="854" height="480" align="left" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe> -->
+    </div>
+    <div id="instructions">
+      <h2>What is HTML? And what is hypertext?</h2>
+      <p>To kick things off, we'll explore what exactly HTML is, and where it came from.</p>
+      <p>If you'd like to know more, check out these external links:</p>
+      <ul>
+        <li><a href="https://www.w3.org/WhatIs.html" target="_blank">"What is HyperText" on w3c.org</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">"HTML" on Wikipedia</a></li>
+      </ul>
+    </div>
+    <pre id="htmlEditor">
+&#x3C;!-- My first web page --&#x3E;
+
+&#x3C;header&#x3E;
+  &#x3C;div&#x3E;
+    &#x3C;h1&#x3E;Night of the Salamander&#x3C;/h1&#x3E;
+
+    &#x3C;h2&#x3E;The new release from &#x3C;strong&#x3E;Beasley the Bard&#x3C;/strong&#x3E;&#x3C;/h2&#x3E;
+
+    &#x3C;img src=&#x22;https://s3-us-west-2.amazonaws.com/s.cdpn.io/1152887/beasley.png&#x22; alt=&#x22;Beasley the Bard&#x22;&#x3E;
+  &#x3C;/div&#x3E;
+&#x3C;/header&#x3E;
+
+&#x3C;main&#x3E;
+  &#x3C;h3&#x3E;Album release party&#x3C;/h3&#x3E;
+
+  &#x3C;p&#x3E;We hope to see &#x3C;em&#x3E;you&#x3C;/em&#x3E; &#x3C;strong&#x3E;October 13&#x3C;/strong&#x3E;!&#x3C;/p&#x3E;
+
+  &#x3C;form&#x3E;
+    &#x3C;input placeholder=&#x22;Email&#x22; type=&#x22;email&#x22;&#x3E;
+    &#x3C;input placeholder=&#x22;# of guests&#x22; type=&#x22;number&#x22;&#x3E;
+    &#x3C;button&#x3E;RSVP&#x3C;/button&#x3E;
+  &#x3C;/form&#x3E;
+&#x3C;/main&#x3E;
+
+&#x3C;footer&#x3E;
+  &#x3C;p&#x3E;Pixel art by Eric Alloway (&#x3C;a href=&#x22;https://twitter.com/iscaneus&#x22;&#x3E;@Iscaneus&#x3C;/a&#x3E;).&#x3C;/p&#x3E;
+
+  &#x3C;p&#x3E;Fire salamander photo by Cristo Vlahos. &#x3C;a href=&#x22;https://creativecommons.org/licenses/by/3.0&#x22;&#x3E;CC BY 3.0&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+&#x3C;/footer&#x3E;
+    </pre>
+    <pre id="cssEditor">
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway:400,700');
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: Raleway, sans-serif;
+}
+
+header {
+  color: white;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1152887/salamander.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: gold;
+  margin-top: 0;
+  font-size: 40px;
+  font-family: Oswald, sans-serif;
+}
+
+h2 {
+  color: beige;
+  font-weight: normal;
+}
+
+main {
+  background: silver;
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid gray;
+  font-size: 12px;
+}
+
+button {
+  padding: 8px 24px;
+  border: 1px solid gray;
+  font-size: 12px;
+  background-color: forestgreen;
+  color: #fff;
+}
+
+img {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+footer {
+  font-size: 12px;
+  color: gray;
+}
+    </pre>
+    <div id="preview"></div>
+    <div id="buttons">
+      <button id="htmlButton" class="active">HTML</button>
+      <button id="cssButton">CSS</button>
+    </div>
+  </main>
+
+  <script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/ace.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/ext-emmet.js"></script>
+  <script src="editor.js"></script>
+</body>
+</html>
